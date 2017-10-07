@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleToDoList</string>
+    <string name="MainActivityText">Task</string>
+    <string name="DialogNewTaskTitle">New Task</string>
+    <string name="DialogAddTaskText">Task content</string>
+    <string name="Priority_High">High priority</string>
+    <string name="Priority_Med">Normal priority</string>
+    <string name="Priority_Low">Low priority</string>
+    <string name="DialogNewGroupTitle">New group</string>
+    <string name="DialogNewSubTaskTitle">New SubTask</string>
+
+</resources>

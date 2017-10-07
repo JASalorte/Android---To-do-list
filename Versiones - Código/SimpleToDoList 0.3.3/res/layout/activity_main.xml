@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#101010" >
+
+    <!-- Header Starts -->
+
+    <RelativeLayout
+        android:id="@+id/headyer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@layout/header_gradient"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <!-- Logo Start -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@+id/header"
+            android:src="@drawable/logo" />
+        <!-- Logo Ends -->
+
+        <TextView
+            android:id="@+id/toDotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/logo"
+            android:gravity="center_vertical"
+            android:text="@string/MainActivityText"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/Text_size_big_hdpi" />
+
+        <TextView
+            android:id="@+id/main_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/toDotext"
+            android:layout_alignBottom="@+id/toDotext"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical"
+            android:text="(0/0)"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/Text_size_big_hdpi" />
+    </RelativeLayout>
+
+    <!-- Header Ends -->
+
+
+    <!-- Footer Start -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#808080"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/new_element"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/new_element_small" />
+
+        <ImageView
+            android:id="@+id/new_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/new_group" />
+
+        <ImageView
+            android:id="@+id/check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/check_all" />
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/remove" />
+
+        <ImageView
+            android:id="@+id/config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/config" />
+    </LinearLayout>
+    <!-- Footer Ends -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headyer"
+        android:background="#101010" >
+
+        <ListView
+            android:id="@+id/listviewShare"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="false">
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
